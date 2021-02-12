@@ -325,7 +325,7 @@
         </div>
      </section>
 
-     <!--Подвал-->
+     <!--=============== Подвал ===============-->
      <footer class="footer">
         <div class="container footer-container">
 
@@ -389,23 +389,75 @@
             </ul>
           </div>
 
+          
+            <form>
+              <div class="form-field">
+                <label class="social-container-text" for="email">Подпишитесь на рассылку</label>
+                <input class="input-mail" type="email" name="email" id="email" placeholder="E-mail">
+              
+                <button class="btn-submit" type="submit"><span>Подписаться</span>  
+                  <svg width="24px" height="24px">
+                    <use href="./img/symbol-defs.svg#icon-send" ></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+
+          
         </div>
 
      </footer>
 
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque reiciendis dolorem alias 
-            necessitatibus possimus minus tempore? Nulla voluptatum, delectus aut aliquid quo, consectetur 
-            impedit omnis quae modi labore quos placeat nemo, incidunt excepturi possimus vitae rerum ipsam 
-            harum voluptatibus. Assumenda minima ipsa explicabo, quidem quae deserunt necessitatibus unde alias
-            reprehenderit.
-          </p>
+          <p class="modal-text">Оставьте свои данные, мы вам перезвоним</h3>
+          <form class="modal-form" name="order-service-form" autocomplete="on">
+
+            <label class="label">Имя
+              <span class="modal-input-wrapper">
+                <input class="input" type="text">
+                <svg width="12" height="12" class="modal-form-icon">
+                  <use href="./img/symbol-defs.svg#name-icon"></use>
+                </svg>
+              </span>
+            </label>
+            
+
+            <label class="label">Телефон
+              <span class="modal-input-wrapper">
+                <input class="input" type="tel">
+                <svg width="12" height="12" class="modal-form-icon">
+                  <use href="./img/symbol-defs.svg#phone-icon"></use>
+                </svg>
+              </span>
+            </label>
+            
+
+            <label class="label">Почта
+              <span class="modal-input-wrapper">
+                <input class="input" type="email">
+                <svg width="12" height="12" class="modal-form-icon">
+                  <use href="./img/symbol-defs.svg#mail-icon"></use>
+                </svg>
+              </span>
+            </label>
+            
+
+            <label class="modal-label-textarea" for="comment">Комментарий</label>
+            <textarea class="text-area" name="user-comment" id="comment" placeholder="Введите текст"></textarea>
+
+            <input class="modal-checkbox visually-hidden" type="checkbox" name="user-policy" id="policy-check" class="visually-hidden">
+            <label class="modal-form-label-policy" for="policy-check">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+            
+
+            <button class="modal-form-btn" type="submit">Отправить</button>
+          </form>
+
           <button type="button" class="modal-btn" data-modal-close>
             <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"
-                fill="black" />
+                d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 
+                5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"/>
             </svg>
           </button>
         </div>
@@ -413,19 +465,5 @@
 
       <script src="./js/modal.js"></script>
 
-     <!-- <script>
-       const refs = {
-          openModalBtn: document.querySelector('[data-modal-open]'),
-          closeModalBtn: document.querySelector('[data-modal-close]'),
-          backdrop: document.querySelector('[data-backdrop]'),
-        };
-
-        refs.openModalBtn.addEventListener('click', toggleModal);
-        refs.closeModalBtn.addEventListener('click', toggleModal);
-
-        function toggleModal() {
-        refs.backdrop.classList.toggle('is-hidden');
-        }
-     </script> -->
      </body>
 </html>
