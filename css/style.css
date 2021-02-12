@@ -486,6 +486,7 @@ body {
 
 .footer-container-address {
   margin-right: 70px;
+  width: 231px;
 }
 
 .footer-list .footer-list-item:not(:last-child) {
@@ -510,7 +511,6 @@ body {
 
 .social-container {
   padding-top: 12px;
-  margin-right: 93px;
 }
 
 .footer-social-list {
@@ -737,11 +737,14 @@ body {
 }
 
 /*=============== Стили форм ===============*/
+.footer-form {
+  margin-left: auto;
+}
 
 .form-field {
   display: flex;
   flex-wrap: wrap;
-  width: 575px;
+  width: 570px;
   padding-top: 12px;
 }
 
@@ -947,4 +950,9 @@ body {
 }
 
 .modal-form-label-policy {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
